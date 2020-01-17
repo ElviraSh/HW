@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class IntervalBoundaries {
     public static void main(String[] args) {
 
-        int [] arr = new int[12]; //заводим массив из 12 элементов
+        double [] arr = new double[12]; //заводим массив из 12 элементов
 
         Scanner in = new Scanner(System.in); //для того, чтобы мы могли считывать с клавиатуры
         for (int i=0; i<12; i++) { //для i от 0 до 12
             System.out.print("arr[" + i +"]= ");
-            arr[i] = in.nextInt(); //заполняем массив полученными числами
+            arr[i] = in.nextFloat(); //заполняем массив полученными числами
         }
         in.close();
 
-        int maxNumber=arr[0]; //максимальным числом ставим 1 элемент массива
-        int minNumber = maxNumber; //минимальным числом ставим 1 элемент массива
+        double maxNumber=arr[0]; //максимальным числом ставим 1 элемент массива
+        double minNumber = maxNumber; //минимальным числом ставим 1 элемент массива
 
 
         for (int i = 0; i < arr.length; i++) { //для i от 0 до 12

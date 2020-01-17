@@ -5,13 +5,13 @@ public class Rectangles {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("a = ");
-        int a = in.nextInt();
+        double a = in.nextFloat();
         System.out.print("b = ");
-        int b = in.nextInt();
+        double b = in.nextFloat();
         System.out.print("c = ");
-        int c = in.nextInt();
+        double c = in.nextFloat();
         System.out.print("d = ");
-        int d = in.nextInt();
+        double d = in.nextFloat();
 
         if (a > 0 & b > 0 & c > 0 & d > 0) { //проверяем, положительные ли введенные числа (по условию задачи)
             if (((a < c) & (b < d)) | ((b < c) & (a < d))) { //если каждая сторона одного прямоугольника меньше каждой соответсвеннной стороны другого прямоугольника, то первый прямоугольник можно помстить в другой прямоугольник
